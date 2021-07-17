@@ -1,0 +1,57 @@
+.card {
+    padding: 30px 10px;
+    text-align: justify;
+}
+
+.card:hover {
+    background-color: #fca2113f;
+}
+
+.card i,
+.card h3 {
+    text-align: center;
+}
+
+.card i {
+    color: #fca311;
+    display: block;
+    font-size: 3.8rem;
+    margin-bottom: 40px;
+}
+
+.card h3 {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.card p {
+    color: rgb(156, 156, 156);
+}
+
+@media screen and (max-width: 900px) {
+
+    .card {
+        margin: auto;
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .card {
+        margin: auto;
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .card {
+        width: 100%;
+    }
+
+}

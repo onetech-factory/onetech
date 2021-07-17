@@ -1,0 +1,226 @@
+.header {
+    background-color: transparent;
+    height: calc(100vh);
+    position: relative;
+    width: 100%;
+}
+
+.header img {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 150px;
+}
+
+.header__menu {
+    border-bottom: 2px solid black;
+    height: 90px;
+
+    /*flex*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header__brand {
+    margin-left: 30px;
+    width: 177px;
+
+    /*flex*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__brand img {
+    background-color: yellow;
+    width: 100%;
+}
+
+.header__brand i {
+    color: white;
+    font-size: 2.5rem;
+    margin-right: 10px;
+}
+
+.header__brand h2 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.header__link {
+    color: black;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 800;
+    margin-right: 30px;
+    line-height: 90px;
+    text-decoration: none;
+}
+
+.header__link:hover {
+    text-decoration: underline;
+}
+
+.header__phrase {
+    position: relative;
+    /*flex*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__phrase span {
+    color: #fca311;
+    font-size: 3.8rem;
+    font-weight: 800;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.header__phrase h1 {
+    color: black;
+    font-size: 5rem;
+    margin-top: 28vh;
+    width: 70%;
+}
+
+.header__phrase button {
+    background-color: black;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: inline-block;
+    padding: 15px 25px;
+}
+
+.header__phrase button:hover {
+    background-color: rgba(0, 0, 0, 0.89);
+}
+
+.header__phrase i {
+    color: black;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    font-size: 1.8rem;
+    transform: rotate(275deg);
+
+    /*position*/
+    position: absolute;
+    bottom: -10px;
+    right: -35px;
+}
+
+.header__particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -10;
+}
+
+/* @keyframes escribir {
+    from { width: 100% }
+    to { width:0 }
+} */
+
+@keyframes move {
+    0% {
+        transform: rotate(275deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(275deg) scale(1.1);
+    }
+
+    100% {
+        transform: rotate(275deg) scale(1);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .header__phrase span {
+        font-size: 2.7rem;
+    }
+
+    .header__phrase h1 {
+        font-size: 3.5rem;
+        margin-top: 30%;
+        width: 80%;
+    }
+
+    .header__phrase i {
+        font-size: 1.4rem;
+    }
+
+}
+
+@media screen and (max-width: 968px) {
+
+    .header__phrase span {
+        font-size: 2.2rem;
+    }
+
+    .header__phrase h1 {
+        font-size: 3rem;
+        margin-top: 40%;
+        width: 70%;
+    }
+
+    .header__phrase i {
+        font-size: 1.3rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .header__phrase span {
+        font-size: 1.9rem;
+    }
+
+    .header__phrase h1 {
+        font-size: 2.5rem;
+        margin-top: 50%;
+        width: 80%;
+    }
+
+    .header__phrase i {
+        font-size: 1.2rem;
+        bottom: -10px;
+        right: -25px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .header img {
+        position: absolute;
+        width: 130px;
+    }
+
+    .header__phrase span {
+        font-size: 1.5rem;
+    }
+
+    .header__phrase h1 {
+        font-size: 2rem;
+        margin-top: 70%;
+        width: 90%;
+    }
+
+    .header__phrase i {
+        font-size: 1.1rem;
+        bottom: -10px;
+        right: -25px;
+    }
+}
